@@ -1,0 +1,26 @@
+[project]
+name = "prompt-sensitivity-index"
+version = "0.0.1"
+authors = [
+  { name="H S V N S Kowndinya Renduchintala", email="rharisrikowndinya333@gmail.com" },
+  { name="Anwoy Chatterjee", email="anwoychatterjee@gmail.com" },
+  { name="Sumit Bhatia", email="sumit.summit@gmail.com" },
+  { name="Tanmoy Chakraborty", email="chak.tanmoy.iit@gmail.com" }
+]
+description = "A Prompt Sensitivity Index for Language Models"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "torch",
+  "transformers"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/kowndinya-renduchintala/POSIX"
+Issues = "https://github.com/kowndinya-renduchintala/POSIX/issues"
