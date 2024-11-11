@@ -78,16 +78,29 @@ write_trace_to_json(trace, "posix_trace.json")
 
 # Citation
 
-If you use *POSIX* in your research, please cite of our EMNLP 2024 paper (aclanthology version coming soon...)
+If you use *POSIX* in your research, please cite our EMNLP 2024 paper :blush: -
 
-[_POSIX: A Prompt Sensitivity Index For Large Language Models_](https://arxiv.org/abs/2410.02185):
+
+[POSIX: A Prompt Sensitivity Index For Large Language Models](https://aclanthology.org/2024.findings-emnlp.852) (Chatterjee et al., Findings 2024)
 
 ```
-@article{chatterjee2024posix,
-  title={POSIX: A Prompt Sensitivity Index For Large Language Models},
-  author={Chatterjee, Anwoy and Renduchintala, HSVNS Kowndinya and Bhatia, Sumit and Chakraborty, Tanmoy},
-  journal={arXiv preprint arXiv:2410.02185},
-  year={2024}
+@inproceedings{chatterjee-etal-2024-posix,
+    title = "{POSIX}: A Prompt Sensitivity Index For Large Language Models",
+    author = "Chatterjee, Anwoy  and
+      Renduchintala, H S V N S Kowndinya  and
+      Bhatia, Sumit  and
+      Chakraborty, Tanmoy",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.852",
+    pages = "14550--14565",
+    abstract = "Despite their remarkable capabilities, Large Language Models (LLMs) are found to be surprisingly sensitive to minor variations in prompts, often generating significantly divergent outputs in response to minor variations in the prompts, such as spelling errors, alteration of wording or the prompt template. However, while assessing the quality of an LLM, the focus often tends to be solely on its performance on downstream tasks, while very little to no attention is paid to prompt sensitivity. To fill this gap, we propose POSIX {--} a novel PrOmpt Sensitivity IndeX as a reliable measure of prompt sensitivity, thereby offering a more comprehensive evaluation of LLM performance. The key idea behind POSIX is to capture the relative change in loglikelihood of a given response upon replacing the corresponding prompt with a different intent-preserving prompt. We provide thorough empirical evidence demonstrating the efficacy of POSIX in capturing prompt sensitivity and subsequently use it to measure and thereby compare prompt sensitivity of various open source LLMs. We find that merely increasing the parameter count or instruction tuning does not necessarily reduce prompt sensitivity whereas adding some few-shot exemplars, even just one, almost always leads to significant decrease in prompt sensitivity. We also find that alterations to prompt template lead to the highest sensitivity in the case of MCQ type tasks, whereas paraphrasing results in the highest sensitivity in open-ended generation tasks. The code for reproducing our results is open-sourced at https://github.com/kowndinya-renduchintala/POSIX.",
 }
 ```
 
